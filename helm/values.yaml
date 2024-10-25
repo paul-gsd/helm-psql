@@ -1,0 +1,16 @@
+replicaCount: 1
+
+image:
+  repository: postgres
+  pullPolicy: IfNotPresent
+  tag: "12.20"
+
+service:
+  type: ClusterIP
+  port: 80
+
+psql:
+  port:
+  username:
+  password:
+  database:
